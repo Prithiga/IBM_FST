@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="34.078806">
+    <testcase classname="Verify Create Edit and Delete Coupon" name="Create a Coupon with all inputs" time="11.448844">
+        <system-out>
+            <![CDATA[Given User navigated to the Login page......................................passed
+And Enter Username "admin" and password "Admin@123".........................passed
+Then User should be able to login...........................................passed
+When User navigates to coupon page..........................................passed
+And Click on Add new Coupon.................................................passed
+Then Verify user is navigated to Create coupon screen.......................passed
+And Add a new coupon with all Inputs "AAutomation" , "PRITHIGA" , "Percentage", "10","1000","Yes","Yes","All","All","2022-05-26","2022-06-26","1","1","Enabled".passed
+Then Verify coupon is added.................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Verify Create Edit and Delete Coupon" name="Edit a Coupon with all inputs" time="12.335925">
+        <system-out>
+            <![CDATA[Given User navigated to the Login page......................................passed
+And Enter Username "admin" and password "Admin@123".........................passed
+Then User should be able to login...........................................passed
+When User navigates to coupon page..........................................passed
+And Click on Edit coupon code "PRITHIGA"....................................passed
+Then Verify user is navigated to Edit coupon screen.........................passed
+And Edit a coupon with all Inputs "AAutomation" , "PRI_EDIT" , "Percentage", "20","2000","Yes","Yes","All","All","2022-05-26","2022-06-26","1","1","Enabled".passed
+Then Verify coupon is edited................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Verify Create Edit and Delete Coupon" name="Delete a Coupon" time="10.294037">
+        <system-out>
+            <![CDATA[Given User navigated to the Login page......................................passed
+And Enter Username "admin" and password "Admin@123".........................passed
+Then User should be able to login...........................................passed
+When User navigates to coupon page..........................................passed
+And Select a coupon code to delete based on coupon code "PRI_EDIT"..........passed
+Then Delete a coupon........................................................passed
+And Verify coupon is deleted................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
