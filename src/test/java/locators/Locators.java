@@ -64,7 +64,7 @@ public class Locators {
 	@FindBy(id ="input-discount")
 	public WebElement discountTextBox;
 	
-	@FindBy(id ="input-name")
+	@FindBy(id ="input-total")
 	public WebElement totalAmountTextBox;
 	
 	@FindBy(xpath ="//label/span[text()='Customer Login']/../../div//label[1]/input")
@@ -124,4 +124,6 @@ public class Locators {
 	public WebElement SelectCheckbox(String couponCode) {
 		return driver.findElement(By.xpath("//tr/td[3][text()='"+couponCode+"']/../td/input[@type='checkbox']"));
 	}
+	
+	
 }

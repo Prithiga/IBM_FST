@@ -11,58 +11,48 @@
         "steps": [
           {
             "result": {
-              "duration": 3595078200,
+              "duration": 4277818900,
               "status": "passed"
             },
             "line": 5,
             "name": "User navigated to the Login page",
             "match": {
-              "location": "StepDefinition.user_navigated_to_the_Login_page()"
+              "location": "HooksClass.user_navigated_to_the_Login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 149109400,
+              "duration": 161089800,
               "status": "passed"
             },
             "line": 6,
-            "name": "Enter Username \"admin\" and password \"Admin@123\"",
+            "name": "Enter Username and Password",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"admin\"",
-                  "offset": 15
-                },
-                {
-                  "val": "\"Admin@123\"",
-                  "offset": 36
-                }
-              ],
-              "location": "StepDefinition.enter_Username_and_password(String,String)"
+              "location": "HooksClass.enter_Username_and_password()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1516722600,
+              "duration": 2693691000,
               "status": "passed"
             },
             "line": 7,
             "name": "User should be able to login",
             "match": {
-              "location": "StepDefinition.user_should_be_able_to_login()"
+              "location": "HooksClass.user_should_be_able_to_login()"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2022-04-28T04:58:47.168Z",
+        "start_timestamp": "2022-04-29T17:04:46.765Z",
         "before": [
           {
             "result": {
-              "duration": 1829118900,
+              "duration": 1736582700,
               "status": "passed"
             },
             "match": {
@@ -70,14 +60,14 @@
             }
           }
         ],
-        "line": 20,
+        "line": 19,
         "name": "Create a Coupon with all inputs",
         "description": "",
-        "id": "verify-create-edit-and-delete-coupon;create-a-coupon-with-all-inputs;;2",
+        "id": "verify-create---edit-and-delete-coupon;create-a-coupon-with-all-inputs;;2",
         "after": [
           {
             "result": {
-              "duration": 688923900,
+              "duration": 662593600,
               "status": "passed"
             },
             "match": {
@@ -90,119 +80,121 @@
         "steps": [
           {
             "result": {
-              "duration": 626482200,
+              "duration": 1078498000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User navigates to coupon page",
+            "match": {
+              "location": "CouponsStepDefinition.user_navigates_to_coupon_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 766201600,
               "status": "passed"
             },
             "line": 12,
-            "name": "User navigates to coupon page",
+            "name": "Click on Add new Coupon",
             "match": {
-              "location": "StepDefinition.user_navigates_to_coupon_page()"
+              "location": "CouponsStepDefinition.click_on_Add_new_Coupon()"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 530303400,
+              "duration": 60815800,
               "status": "passed"
             },
             "line": 13,
-            "name": "Click on Add new Coupon",
+            "name": "Verify user is navigated to Create coupon screen",
             "match": {
-              "location": "StepDefinition.click_on_Add_new_Coupon()"
+              "location": "CouponsStepDefinition.verify_user_is_navigated_to_Create_coupon_screen()"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 38702000,
+              "duration": 2494745800,
               "status": "passed"
             },
             "line": 14,
-            "name": "Verify user is navigated to Create coupon screen",
-            "match": {
-              "location": "StepDefinition.verify_user_is_navigated_to_Create_coupon_screen()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2376568900,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "Add a new coupon with all Inputs \"AAutomation\" , \"PRITHIGA\" , \"Percentage\", \"10\",\"1000\",\"Yes\",\"Yes\",\"All\",\"All\",\"2022-05-26\",\"2022-06-26\",\"1\",\"1\",\"Enabled\"",
+            "name": "Add a new coupon with all Inputs \"IBM FST\", \"Percentage\", \"10\",\"1000\",\"Yes\",\"Yes\",\"All\",\"All\",\"2022-05-26\",\"2022-06-26\",\"1\",\"1\",\"Enabled\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"AAutomation\"",
+                  "val": "\"IBM FST\"",
                   "offset": 33
                 },
                 {
-                  "val": "\"PRITHIGA\"",
-                  "offset": 49
-                },
-                {
                   "val": "\"Percentage\"",
-                  "offset": 62
+                  "offset": 44
                 },
                 {
                   "val": "\"10\"",
-                  "offset": 76
+                  "offset": 58
                 },
                 {
                   "val": "\"1000\"",
-                  "offset": 81
+                  "offset": 63
                 },
                 {
                   "val": "\"Yes\"",
+                  "offset": 70
+                },
+                {
+                  "val": "\"Yes\"",
+                  "offset": 76
+                },
+                {
+                  "val": "\"All\"",
+                  "offset": 82
+                },
+                {
+                  "val": "\"All\"",
                   "offset": 88
                 },
                 {
-                  "val": "\"Yes\"",
+                  "val": "\"2022-05-26\"",
                   "offset": 94
                 },
                 {
-                  "val": "\"All\"",
-                  "offset": 100
-                },
-                {
-                  "val": "\"All\"",
-                  "offset": 106
-                },
-                {
-                  "val": "\"2022-05-26\"",
-                  "offset": 112
-                },
-                {
                   "val": "\"2022-06-26\"",
-                  "offset": 125
+                  "offset": 107
                 },
                 {
                   "val": "\"1\"",
-                  "offset": 138
+                  "offset": 120
                 },
                 {
                   "val": "\"1\"",
-                  "offset": 142
+                  "offset": 124
                 },
                 {
                   "val": "\"Enabled\"",
-                  "offset": 146
+                  "offset": 128
                 }
               ],
-              "location": "StepDefinition.add_a_new_coupon_with_all_Inputs(String,String,String,String,String,String,String,String,String,String,String,String,String,String)"
+              "location": "CouponsStepDefinition.add_a_new_coupon_with_all_Inputs(String,String,String,String,String,String,String,String,String,String,String,String,String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 94491400,
+              "duration": 164676300,
               "status": "passed"
             },
-            "line": 16,
-            "name": "Verify coupon is added",
+            "line": 15,
+            "name": "Verify coupon is added \"IBM FST\"",
             "match": {
-              "location": "StepDefinition.verify_coupon_is_added()"
+              "arguments": [
+                {
+                  "val": "\"IBM FST\"",
+                  "offset": 23
+                }
+              ],
+              "location": "CouponsStepDefinition.verify_coupon_is_added(String)"
             },
             "keyword": "Then "
           }
@@ -222,58 +214,48 @@
         "steps": [
           {
             "result": {
-              "duration": 3779024700,
+              "duration": 4443714200,
               "status": "passed"
             },
             "line": 5,
             "name": "User navigated to the Login page",
             "match": {
-              "location": "StepDefinition.user_navigated_to_the_Login_page()"
+              "location": "HooksClass.user_navigated_to_the_Login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 172303800,
+              "duration": 143036600,
               "status": "passed"
             },
             "line": 6,
-            "name": "Enter Username \"admin\" and password \"Admin@123\"",
+            "name": "Enter Username and Password",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"admin\"",
-                  "offset": 15
-                },
-                {
-                  "val": "\"Admin@123\"",
-                  "offset": 36
-                }
-              ],
-              "location": "StepDefinition.enter_Username_and_password(String,String)"
+              "location": "HooksClass.enter_Username_and_password()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1734823600,
+              "duration": 2306800800,
               "status": "passed"
             },
             "line": 7,
             "name": "User should be able to login",
             "match": {
-              "location": "StepDefinition.user_should_be_able_to_login()"
+              "location": "HooksClass.user_should_be_able_to_login()"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2022-04-28T04:58:58.617Z",
+        "start_timestamp": "2022-04-29T17:05:00.865Z",
         "before": [
           {
             "result": {
-              "duration": 1253486400,
+              "duration": 1199516100,
               "status": "passed"
             },
             "match": {
@@ -281,14 +263,14 @@
             }
           }
         ],
-        "line": 32,
-        "name": "Edit a Coupon with all inputs",
+        "line": 31,
+        "name": "Edit the same Coupon with all inputs",
         "description": "",
-        "id": "verify-create-edit-and-delete-coupon;edit-a-coupon-with-all-inputs;;2",
+        "id": "verify-create---edit-and-delete-coupon;edit-the-same-coupon-with-all-inputs;;2",
         "after": [
           {
             "result": {
-              "duration": 651348500,
+              "duration": 675497100,
               "status": "passed"
             },
             "match": {
@@ -301,125 +283,121 @@
         "steps": [
           {
             "result": {
-              "duration": 596073100,
+              "duration": 687255000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User navigates to coupon page",
+            "match": {
+              "location": "CouponsStepDefinition.user_navigates_to_coupon_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 625017300,
               "status": "passed"
             },
             "line": 24,
-            "name": "User navigates to coupon page",
+            "name": "Click on Edit coupon code",
             "match": {
-              "location": "StepDefinition.user_navigates_to_coupon_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 755128600,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "Click on Edit coupon code \"PRITHIGA\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"PRITHIGA\"",
-                  "offset": 26
-                }
-              ],
-              "location": "StepDefinition.click_on_Edit_coupon_code(String)"
+              "location": "CouponsStepDefinition.click_on_Edit_coupon_code()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 36426400,
+              "duration": 67794600,
               "status": "passed"
             },
-            "line": 26,
+            "line": 25,
             "name": "Verify user is navigated to Edit coupon screen",
             "match": {
-              "location": "StepDefinition.verify_user_is_navigated_to_Edit_coupon_screen()"
+              "location": "CouponsStepDefinition.verify_user_is_navigated_to_Edit_coupon_screen()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 3258167700,
+              "duration": 3175246100,
               "status": "passed"
             },
-            "line": 27,
-            "name": "Edit a coupon with all Inputs \"AAutomation\" , \"PRI_EDIT\" , \"Percentage\", \"20\",\"2000\",\"Yes\",\"Yes\",\"All\",\"All\",\"2022-05-26\",\"2022-06-26\",\"1\",\"1\",\"Enabled\"",
+            "line": 26,
+            "name": "Edit a coupon with all Inputs \"IBM FST\" ,\"Percentage\", \"20\",\"2000\",\"Yes\",\"Yes\",\"All\",\"All\",\"2022-05-26\",\"2022-06-26\",\"1\",\"1\",\"Enabled\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"AAutomation\"",
+                  "val": "\"IBM FST\"",
                   "offset": 30
                 },
                 {
-                  "val": "\"PRI_EDIT\"",
-                  "offset": 46
-                },
-                {
                   "val": "\"Percentage\"",
-                  "offset": 59
+                  "offset": 41
                 },
                 {
                   "val": "\"20\"",
-                  "offset": 73
+                  "offset": 55
                 },
                 {
                   "val": "\"2000\"",
-                  "offset": 78
+                  "offset": 60
                 },
                 {
                   "val": "\"Yes\"",
+                  "offset": 67
+                },
+                {
+                  "val": "\"Yes\"",
+                  "offset": 73
+                },
+                {
+                  "val": "\"All\"",
+                  "offset": 79
+                },
+                {
+                  "val": "\"All\"",
                   "offset": 85
                 },
                 {
-                  "val": "\"Yes\"",
+                  "val": "\"2022-05-26\"",
                   "offset": 91
                 },
                 {
-                  "val": "\"All\"",
-                  "offset": 97
-                },
-                {
-                  "val": "\"All\"",
-                  "offset": 103
-                },
-                {
-                  "val": "\"2022-05-26\"",
-                  "offset": 109
-                },
-                {
                   "val": "\"2022-06-26\"",
-                  "offset": 122
+                  "offset": 104
                 },
                 {
                   "val": "\"1\"",
-                  "offset": 135
+                  "offset": 117
                 },
                 {
                   "val": "\"1\"",
-                  "offset": 139
+                  "offset": 121
                 },
                 {
                   "val": "\"Enabled\"",
-                  "offset": 143
+                  "offset": 125
                 }
               ],
-              "location": "StepDefinition.edit_a_coupon_with_all_Inputs(String,String,String,String,String,String,String,String,String,String,String,String,String,String)"
+              "location": "CouponsStepDefinition.edit_a_coupon_with_all_Inputs(String,String,String,String,String,String,String,String,String,String,String,String,String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 98678900,
+              "duration": 121699900,
               "status": "passed"
             },
-            "line": 28,
-            "name": "Verify coupon is edited",
+            "line": 27,
+            "name": "Verify coupon is edited \"IBM FST\"",
             "match": {
-              "location": "StepDefinition.verify_coupon_is_edited()"
+              "arguments": [
+                {
+                  "val": "\"IBM FST\"",
+                  "offset": 24
+                }
+              ],
+              "location": "CouponsStepDefinition.verify_coupon_is_edited(String)"
             },
             "keyword": "Then "
           }
@@ -439,58 +417,48 @@
         "steps": [
           {
             "result": {
-              "duration": 3759449800,
+              "duration": 4640241500,
               "status": "passed"
             },
             "line": 5,
             "name": "User navigated to the Login page",
             "match": {
-              "location": "StepDefinition.user_navigated_to_the_Login_page()"
+              "location": "HooksClass.user_navigated_to_the_Login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 157294000,
+              "duration": 141256700,
               "status": "passed"
             },
             "line": 6,
-            "name": "Enter Username \"admin\" and password \"Admin@123\"",
+            "name": "Enter Username and Password",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"admin\"",
-                  "offset": 15
-                },
-                {
-                  "val": "\"Admin@123\"",
-                  "offset": 36
-                }
-              ],
-              "location": "StepDefinition.enter_Username_and_password(String,String)"
+              "location": "HooksClass.enter_Username_and_password()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2156849000,
+              "duration": 2401833700,
               "status": "passed"
             },
             "line": 7,
             "name": "User should be able to login",
             "match": {
-              "location": "StepDefinition.user_should_be_able_to_login()"
+              "location": "HooksClass.user_should_be_able_to_login()"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2022-04-28T04:59:10.956Z",
+        "start_timestamp": "2022-04-29T17:05:14.314Z",
         "before": [
           {
             "result": {
-              "duration": 1195199600,
+              "duration": 1190281900,
               "status": "passed"
             },
             "match": {
@@ -498,14 +466,14 @@
             }
           }
         ],
-        "line": 43,
-        "name": "Delete a Coupon",
+        "line": 34,
+        "name": "Delete the same Coupon",
         "description": "",
-        "id": "verify-create-edit-and-delete-coupon;delete-a-coupon;;2",
+        "id": "verify-create---edit-and-delete-coupon;delete-the-same-coupon",
         "after": [
           {
             "result": {
-              "duration": 658061700,
+              "duration": 667663800,
               "status": "passed"
             },
             "match": {
@@ -514,59 +482,53 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 624874800,
+              "duration": 736799800,
               "status": "passed"
             },
-            "line": 36,
+            "line": 35,
             "name": "User navigates to coupon page",
             "match": {
-              "location": "StepDefinition.user_navigates_to_coupon_page()"
+              "location": "CouponsStepDefinition.user_navigates_to_coupon_page()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 80550800,
+              "duration": 87436000,
               "status": "passed"
             },
-            "line": 37,
-            "name": "Select a coupon code to delete based on coupon code \"PRI_EDIT\"",
+            "line": 36,
+            "name": "Select a coupon code to delete based on coupon code",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"PRI_EDIT\"",
-                  "offset": 52
-                }
-              ],
-              "location": "StepDefinition.select_a_coupon_code_to_delete_based_on_coupon_code(String)"
+              "location": "CouponsStepDefinition.select_a_coupon_code_to_delete_based_on_coupon_code()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 86116800,
+              "duration": 70341200,
               "status": "passed"
             },
-            "line": 38,
+            "line": 37,
             "name": "Delete a coupon",
             "match": {
-              "location": "StepDefinition.delete_a_coupon()"
+              "location": "CouponsStepDefinition.delete_a_coupon()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1575151900,
+              "duration": 1107591000,
               "status": "passed"
             },
-            "line": 39,
+            "line": 38,
             "name": "Verify coupon is deleted",
             "match": {
-              "location": "StepDefinition.verify_coupon_is_deleted()"
+              "location": "CouponsStepDefinition.verify_coupon_is_deleted()"
             },
             "keyword": "And "
           }
@@ -578,9 +540,9 @@
         ]
       }
     ],
-    "name": "Verify Create Edit and Delete Coupon",
-    "description": "  I need to create a coupon and Edit and Delete the same coupon",
-    "id": "verify-create-edit-and-delete-coupon",
+    "name": "Verify Create , Edit and Delete Coupon",
+    "description": "  I need to create a coupon and then Edit and Delete the same coupon with Auto-Generated Coupon Code",
+    "id": "verify-create---edit-and-delete-coupon",
     "keyword": "Feature",
     "uri": "file:src/test/java/features/coupon.feature",
     "tags": []
